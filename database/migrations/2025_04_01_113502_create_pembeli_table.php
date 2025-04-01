@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('pembeli', function (Blueprint $table) {
             $table->id('pembeli_id'); // Primary key
-            $table->string('username')->unique(); // Username harus unik
-            $table->string('nama'); // Nama pembeli
-            $table->string('password'); // Password
+            $table->string('username')->unique(); 
+            $table->string('nama'); 
+            $table->string('password'); 
             $table->timestamps();
         });
     }

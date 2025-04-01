@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('stok', function (Blueprint $table) {
             $table->id('stok_id'); // Primary key
-            $table->unsignedBigInteger('Pt_id'); // Foreign key ke tabel Perusahaan
-            $table->date('tgl_stok'); // Tanggal stok masuk
-            $table->integer('jumlah'); // Jumlah stok
+            $table->unsignedBigInteger('Pt_id'); // Foreign key 
+            $table->datetime('tgl_stok');
+            $table->integer('jumlah'); 
             $table->timestamps();
 
             //definisi foreign key

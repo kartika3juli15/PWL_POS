@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('Pt_id'); // Primary key
             $table->string('Nama_PT'); // Nama perusahaan
             $table->string('produk'); // Produk yang ditawarkan
-            $table->integer('harga_awal'); // Harga awal dengan
+            $table->integer('harga_awal');
             $table->timestamps();
         });
     }

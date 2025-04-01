@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('level', function (Blueprint $table) {
             $table->id('level_id'); // Primary key
-            $table->string('kode_jabatan'); // Kolom untuk kode jabatan
-            $table->string('jabatan'); // Kolom untuk jabatan
-            $table->timestamps(); // Kolom created_at dan updated_at
+            $table->string('kode_jabatan'); 
+            $table->string('jabatan'); 
+            $table->timestamps(); 
         });
     }
 

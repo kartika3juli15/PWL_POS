@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('batas_produk', function (Blueprint $table) {
             $table->id('batas_id'); // Primary key
             $table->integer('restock'); // waktu shift restock perusahaan 
-            $table->decimal('diskon', 5, 2); // Diskon dalam persentase
+            $table->decimal('diskon', 5, 2); // Diskon tiap shift restock
             $table->timestamps();
         });
     }
